@@ -14,7 +14,7 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 :root.dark {
@@ -43,6 +43,11 @@ body {
     padding: 1rem;
     text-align: center;
     box-shadow: 0 1px 4px 0px #802ede, 0 1px 4px 0px #302977;
+    height: 104px;
+}
+
+.main-window {
+height: calc(100vh - 1012px      );
 }
 
 .header p {
@@ -50,6 +55,9 @@ body {
 }
 
 .chat-window {
+    display: flex;
+    flex-direction: column;
+    padding-block: 8px;
     background: linear-gradient(to right, var(--main-bg-color-1), var(--main-bg-color-2)) ;
     height: 100%;
     border-radius: 20px;
@@ -151,7 +159,8 @@ body {
 }
 
 .chat-content {
-    height: 300px;
+    /* height: 300px; */
+    overflow-y: scroll;
     scrollbar-width: none;
 }
 

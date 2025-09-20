@@ -13,7 +13,95 @@ const CHAT_HISTORY = [
   {
     role: "bot",
     text: "Hi How are you doing ?"
-  }
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
+  {
+    role: "bot",
+    text: "Hi How are you doing ?"
+  },
 ];
 
 
@@ -109,29 +197,17 @@ function App() {
   }
 
   return (
-    <div className="container-fluid min-vh-100 px-0 d-flex flex-column">
-      <div className="row mx-0 w-100 mb-2">
-        <div className="col-12 px-0">
-          <Header />
-        </div>
-      </div>
-
-      <div className="row flex-fill mb-1">
-        <div className="col-12 col-sm-10 col-lg-8 mx-auto">
-          <div className="chat-window py-2 d-flex flex-column">
-
-            <audio id="audio-element" src="./assets/message-sound.mp3" autoPlay></audio>
-
+    <div className="container-fluid min-vh-100 d-flex flex-column">
+      <Header />
+      <div className="row pb-2 flex-fill main-window">
+        <div className="col-12 col-sm-10 col-lg-8 mx-auto h-100 px-1 px-sm-auto">
+          <div className="chat-window h-100">
             <ChatContent chatHistory={chatHistory} />
             <ChatInput handlePromptSubmit={_handlePromptSubmit} />
-
             <audio ref={audioRef} src="/message-sound.mp3" preload="auto" />
-
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }
