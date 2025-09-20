@@ -112,7 +112,7 @@ function App() {
     <div className="container-fluid min-vh-100 d-flex flex-column">
       <Header />
       <div className="row pb-2 flex-fill main-window">
-        <div className="col-12 col-sm-10 col-lg-8 mx-auto h-100 px-1 px-sm-auto">
+        <div className="col-12 col-sm-10 col-lg-8 mx-auto h-80per  px-1 px-sm-auto">
           <div className="chat-window h-100">
             <ChatContent chatHistory={chatHistory} />
             <ChatInput handlePromptSubmit={_handlePromptSubmit} />

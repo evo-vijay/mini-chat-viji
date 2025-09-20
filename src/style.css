@@ -252,5 +252,9 @@ height: calc(100dvh - 112px);
     .header .dark-mode {
         font-size: 16px;
     }
+
+    .h-80per {
+        height: 80% !important;
+    }
     
 }
