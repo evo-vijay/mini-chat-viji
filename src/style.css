@@ -50,7 +50,7 @@ body {
 }
 
 .main-window {
-height: calc(100vh - 1012px      );
+height: calc(100dvh - 112px);
 }
 
 .header p {
@@ -228,4 +228,29 @@ height: calc(100vh - 1012px      );
     100% {
          transform: scale(2) translate(-20px, -10px);
     }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .header {
+        height: 80px;
+    }
+
+    .main-window {
+        height: calc(100dvh - 88px);
+    }
+
+   .header h1 {
+        font-size: 16px;
+   }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .header .dark-mode {
+        font-size: 16px;
+    }
+    
 }

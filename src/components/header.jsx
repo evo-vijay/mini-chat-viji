@@ -19,7 +19,7 @@ export default function Header() {
         <header className="header row mb-2">
             <div className="col-12">
                 <h1 className="heading d-flex gap-2 justify-content-center align-items-center">
-                    <span className="material-symbols-outlined fs-2">
+                    <span className="material-symbols-outlined fs-sm-2 fs-4">
                         robot_2
                     </span>
                     I'm Chatbot VIJI
