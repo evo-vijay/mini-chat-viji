@@ -23,9 +23,9 @@ export default function Header() {
                     <span className="material-symbols-outlined fs-sm-2 fs-4">
                         robot_2
                     </span>
-                    I'm Chatbot Kutty
+                    AI Chatbot
                 </h1>
-                <p className="mb-0 d-none d-lg-block">The Kutty Chatbot is here to help you</p>
+                <p className="mb-0 d-none d-lg-block">AI Chatbot is here to help you</p>
             </div>
 
             <span className="dark-mode material-symbols-outlined position-fixed top-0 end-0 m-4 cursor-pointer p-1 bg-dark-subtle" onClick={_handleDarkMode}>
