@@ -23,10 +23,7 @@ export default function Header() {
                     <span className="material-symbols-outlined fs-sm-2 fs-4">
                         robot_2
                     </span>
-                    <span className="d-none d-lg-block">
-                        I'm Chatbot Kutty
-
-                    </span>
+                    I'm Chatbot Kutty
                 </h1>
                 <p className="mb-0 d-none d-lg-block">The Kutty Chatbot is here to help you</p>
             </div>

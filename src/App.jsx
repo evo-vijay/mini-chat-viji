@@ -109,12 +109,12 @@ function App() {
 
   return (
     <div className="container-fluid">
-      <div className="row vh-100 ">
-        <div className="col-sm-1 col-lg-3 px-0 d-none d-sm-block">
+      <div className="row vh-100 flex-wrap">
+        <div className="col-12  col-lg-3 px-0 ">
           <Header />
         </div>
 
-        <div className="col-sm-11 col-lg-9 py-2 h-100">
+        <div className="col-12 col-lg-9 py-2 h-100">
           <div className="chat-window">
             <ChatContent chatHistory={chatHistory} />
             <ChatInput handlePromptSubmit={_handlePromptSubmit} />
