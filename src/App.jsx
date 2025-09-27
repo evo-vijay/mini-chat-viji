@@ -109,7 +109,7 @@ function App() {
 
   return (
     <div className="container-fluid">
-      <div className="row vh-100 flex-wrap">
+      <div className="row vh-100vh flex-wrap">
         <div className="col-12  col-lg-3 px-0 ">
           <Header />
         </div>

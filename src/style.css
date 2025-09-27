@@ -189,6 +189,10 @@ body {
      color: var(--dark-white-icon);
 }
 
+.vh-100vh {
+    height: 100vh;
+}
+
 @keyframes fade-up {
     from {
         opacity: 0;
@@ -250,8 +254,8 @@ body {
         max-width: 90%;
     }
 
-    .vh-100 {
-        height: 70vh !important;
+    .vh-100vh {
+        height: 80vh !important;
     }
     
 }
