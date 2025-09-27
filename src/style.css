@@ -249,5 +249,9 @@ body {
     .chat-text-wrapper {
         max-width: 90%;
     }
+
+    .chat-window {
+        height: 80%;
+    }
     
 }
