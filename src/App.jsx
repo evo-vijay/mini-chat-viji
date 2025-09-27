@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 // Google Gemini AI Package import
 import { GoogleGenAI } from "@google/genai";
 
+
 import ChatContent from "./components/chat-content";
 import ChatInput from "./components/chat-input";
 import Header from "./components/header";
@@ -13,7 +14,7 @@ const CHAT_HISTORY = [
   {
     role: "bot",
     text: "Hi How are you doing ?"
-  }
+  },
 ];
 
 
@@ -75,9 +76,7 @@ function App() {
           },
         }
       });
-      let data = response.text.replace(/\*+/g, "");;
-
-      console.log(response);
+      let data = response.text.replace(/\*+/g, "");
 
       setChatHistory(
         [
@@ -109,11 +108,14 @@ function App() {
   }
 
   return (
-    <div className="container-fluid min-vh-100 d-flex flex-column">
-      <Header />
-      <div className="row pb-2 flex-fill main-window">
-        <div className="col-12 col-sm-10 col-lg-8 mx-auto h-80per  px-1 px-sm-auto">
-          <div className="chat-window h-100">
+    <div className="container-fluid">
+      <div className="row vh-100 ">
+        <div className="col-sm-1 col-lg-3 px-0 d-none d-sm-block">
+          <Header />
+        </div>
+
+        <div className="col-sm-11 col-lg-9 py-2 h-100">
+          <div className="chat-window">
             <ChatContent chatHistory={chatHistory} />
             <ChatInput handlePromptSubmit={_handlePromptSubmit} />
             <audio ref={audioRef} src="/message-sound.mp3" preload="auto" />

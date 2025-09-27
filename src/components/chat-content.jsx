@@ -24,14 +24,14 @@ function ChatContent({ chatHistory }) {
                 {
                     chatHistory.map((item, index) => (
                         item.role === "bot" ?
-                            <div className="chat-text-wrapper d-flex gap-2 align-items-center bot-text" key={index}>
+                            <div className="chat-text-wrapper d-flex align-items-start gap-2  bot-text" key={index}>
                                 <span className="material-symbols-outlined chat-bot p-1">
                                     robot_2
                                 </span>
                                 <p className="chat-text">{item.text}</p>
                             </div>
                             :
-                            <div className="chat-text-wrapper d-flex gap-2 align-items-center user-text ms-auto" key={index}>
+                            <div className="chat-text-wrapper d-flex align-items-start gap-2  user-text ms-auto" key={index}>
                                 <p className="chat-text">{item.text}</p>
                                 <span className="material-symbols-outlined user-bot p-1">
                                     nest_wake_on_approach
